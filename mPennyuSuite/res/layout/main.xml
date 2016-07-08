@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <ImageView        
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imgLogo"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:src="@drawable/msa_intro" />
+    
+    <LinearLayout     
+    android:id="@+id/panelMainMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:visibility="gone"      
+    >	
+    
+     <LinearLayout     
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"    
+    >	
+    	<Button
+		    android:id="@+id/btnServerSettings"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"	        	        
+		    android:text="Server Settings" />
+    
+    	<Button
+		    android:id="@+id/btnClientSettings"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"	        	        
+		    android:text="Client Settings" />
+    </LinearLayout>
+    
+    <LinearLayout     
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:visibility="gone"    
+    >	
+	    <Button
+	        android:id="@+id/btnStartMSA"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        	        	       
+	        android:text="Start" />
+	    <Button
+	        android:id="@+id/btnStopMSA"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        	        	       
+	        android:text="Stop" />	    	    	  
+	  </LinearLayout>
+	  
+    <LinearLayout     
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"    
+    >	
+    	<Button
+		    android:id="@+id/btnCmdStartService"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"	        	        
+		    android:text="Start Service" />
+    	
+    	<Button
+		    android:id="@+id/btnCmdStopService"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"	        	        
+		    android:text="Stop Service" />
+        	    	
+    </LinearLayout>
+    
+    <LinearLayout     
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"    
+    >	
+    	<Button
+        android:id="@+id/btnCmdActivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"	        	        
+        android:text="Activate" />
+	    <Button
+		    android:id="@+id/btnCmdDefConfig"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"	        	        
+		    android:text="DefConfig" />	    	     
+		  <Button
+		    android:id="@+id/btnCmdHideApp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"	        	        
+		    android:text="Hide App" />   	       
+    </LinearLayout>
+           
+     <EditText
+        android:id="@+id/tbLog"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_weight="10"
+        android:ems="10"
+        android:gravity="top"        
+        android:maxLength="99999"
+        android:inputType="textMultiLine"
+        >		        
+	</EditText>
+	</LinearLayout>
+    
+</LinearLayout>

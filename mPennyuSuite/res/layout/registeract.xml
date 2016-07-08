@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <TextView
+	       android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+					android:gravity="center"					        			        					       	        
+	        android:text="@string/app_name2"			
+	        android:textColor="@color/light_font3"		        
+	        android:textSize="24sp"
+	        android:textStyle="bold"	      
+	        android:layout_weight="0.5"  
+	        >
+		</TextView>
+       	     
+    <ImageView        
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imgLogo"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:src="@drawable/msa_intro" />
+        
+    
+    <LinearLayout     
+    android:id="@+id/panelMainMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"                 
+    >
+    <LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content"								
+				android:orientation="horizontal"
+				android:layout_marginTop="5dp" 
+				>	
+					<TextView
+				       android:layout_width="130dp"
+				        android:layout_height="fill_parent"
+						android:gravity="center|left"					        			        					       
+				        android:paddingLeft="10dp"
+				        android:text="@string/sWorkstation"			
+				        android:textColor="@color/light_font3"		        
+				        android:textSize="18sp"
+				        android:textStyle="bold" >
+					</TextView>
+															
+					<EditText
+					    android:id="@+id/tbWorkstation"
+					    android:layout_width="fill_parent"
+                  		android:layout_height="fill_parent"
+                  		android:layout_marginLeft="10dp"
+                  		android:layout_marginRight="10dp"
+					    android:autoText="false"
+					    android:capitalize="none"
+					    android:imeOptions="actionDone"
+					    android:maxLength="16"					    
+					    android:inputType="text"
+					    android:scrollHorizontally="true"		    
+					    android:singleLine="true"		    
+					    android:textSize="16sp"
+					    android:textStyle="bold" />					
+					    
+				</LinearLayout>
+				
+    <LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content"								
+				android:orientation="horizontal"
+				android:layout_marginTop="4dp" 
+				>	
+					<TextView
+				       android:layout_width="130dp"
+				        android:layout_height="fill_parent"
+						android:gravity="center|left"					        			        					       
+				        android:paddingLeft="10dp"
+				        android:text="@string/sUsername"			
+				        android:textColor="@color/light_font3"		        
+				        android:textSize="18sp"
+				        android:textStyle="bold" >
+					</TextView>
+															
+					<EditText
+					    android:id="@+id/tbUsername"
+					    android:layout_width="fill_parent"
+                  		android:layout_height="fill_parent"
+                  		android:layout_marginLeft="10dp"
+                  		android:layout_marginRight="10dp"
+					    android:autoText="false"
+					    android:capitalize="none"
+					    android:imeOptions="actionDone"
+					    android:maxLength="32"					    
+					    android:inputType="text"
+					    android:scrollHorizontally="true"		    
+					    android:singleLine="true"		    
+					    android:textSize="16sp"
+					    android:textStyle="bold" />					
+					    
+				</LinearLayout>
+				
+    <LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content"								
+				android:orientation="horizontal"
+				android:layout_marginTop="4dp" 
+				>	
+					<TextView
+				       android:layout_width="130dp"
+				        android:layout_height="fill_parent"
+						android:gravity="center|left"					        			        					       
+				        android:paddingLeft="10dp"
+				        android:text="@string/sEmailAddress"			
+				        android:textColor="@color/light_font3"		        
+				        android:textSize="18sp"
+				        android:textStyle="bold" >
+					</TextView>
+															
+					<EditText
+					    android:id="@+id/tbEmailAddress"
+					    android:layout_width="fill_parent"
+                  		android:layout_height="fill_parent"
+                  		android:layout_marginLeft="10dp"
+                  		android:layout_marginRight="10dp"
+					    android:autoText="false"
+					    android:capitalize="none"
+					    android:imeOptions="actionDone"
+					    android:maxLength="64"					    
+					    android:inputType="textEmailAddress"
+					    android:scrollHorizontally="true"		    
+					    android:singleLine="true"		    
+					    android:textSize="16sp"
+					    android:textStyle="bold" />					
+					    
+				</LinearLayout>	         
+		    			
+    <LinearLayout		         
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"					
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp" 
+            >
+					<TextView
+				       	android:layout_width="130dp"
+				        android:layout_height="fill_parent"
+								android:gravity="center|left"					        			        					       
+				        android:paddingLeft="10dp"
+				        android:text="@string/sPassword"			
+				        android:textColor="@color/light_font3"		        
+				        android:textSize="18sp"
+				        android:textStyle="bold" >
+					</TextView>
+					
+					<LinearLayout					     
+					   android:layout_width="match_parent"
+					   android:layout_height="wrap_content"					
+					   android:orientation="horizontal"					   
+					   android:layout_marginRight="10dp"
+					   android:layout_marginLeft="10dp">						
+												
+					    <RelativeLayout					     
+					   	android:layout_width="fill_parent"
+					   	android:layout_height="wrap_content"
+					   	android:layout_weight="1"										   						  
+					   	>
+					   
+								<EditText
+				        android:id="@+id/tbEmailPassword"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:visibility="visible"				        				       
+				        android:maxLength="64"
+				        android:autoText="false"
+				        android:inputType="textPassword|textMultiLine|textNoSuggestions"				        
+				        android:maxHeight="120dp"
+				        android:textSize="16sp"
+					    	android:textStyle="bold" 
+				        />	        		       
+				        
+								<EditText
+				        android:id="@+id/tbEmailPasswordShow"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"			
+				        android:visibility="invisible"	        				       
+				        android:maxLength="64"
+				        android:autoText="false"
+				        android:inputType="textMultiLine|textNoSuggestions"				        
+				        android:maxHeight="120dp"
+				        android:textSize="16sp"
+					    	android:textStyle="bold" 
+				        />
+				        
+				    	</RelativeLayout>
+						
+										<ImageView        				        
+				        android:id="@+id/imgTogglePwd"
+				        android:layout_width="fill_parent"
+				        android:layout_height="match_parent"
+				        android:layout_weight="5"
+				        android:layout_marginLeft="3dp"
+				        android:adjustViewBounds="true"
+				        android:scaleType="fitCenter"
+				        android:gravity="center"				        
+				        android:src="@drawable/eye_closed" />
+	
+						</LinearLayout>
+					</LinearLayout>								   
+				
+    	<Button
+			        android:id="@+id/btnRegister"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="20dp"
+			        android:textSize="20sp"			        
+			        android:text="@string/sActivate"			        
+			        />
+		</LinearLayout>
+    
+</LinearLayout>

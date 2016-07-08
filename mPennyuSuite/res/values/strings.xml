@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="MissingTranslation" >
+      
+    <string name="app_name">mPennyuSuite</string>
+    <string name="app_name2">mPennyuSuite</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="sUpdateAvailable">Update(s) Available</string>
+    <string name="sEmailAddress">Email Address</string>
+    <string name="sUsername">Username</string>    
+    <string name="sActivate">Activate</string>
+    <string name="sPleaseWait">Please Wait...</string>
+    <string name="sCancel">Cancel</string>
+    <string name="sRegister">Register</string>
+    <string name="sPassword">Password</string>
+    <string name="sWorkstation">Workstation</string>
+    <string name="sNotActivated">Mobile Suite is not activated!</string>
+    <string name="sEnabled">Enabled</string>
+    <string name="sDisabled">Disabled</string>
+    
+    <string name="sAppConnected">Connected</string>
+    <string name="sAppNotConnected">Not Connected</string>
+    <string name="sAppNotInstalled">Not Installed</string>
+    
+    <string name="sConnecting">Connecting to server...</string>
+    <string name="sRetrying">Retrying...</string>
+    <string name="sLastError">Last error</string>
+    <string name="sDownloading">Downloading</string>
+    
+    <string name="errWorkstation1">Workstation is invalid</string>
+    <string name="errUsername1">Username is invalid</string>
+    <string name="errEmailAddress1">Email address is invalid</string>
+    <string name="errEmailPassword1">Email password is invalid</string>
+    <string name="errActivationTimeout">Activation timed-out!</string>
+    <string name="errActivationOK">Activation successful!</string>
+    <string name="errActivationFailed">Activation failed! Please try again.</string>
+    <string name="errActivationCancelled">Activation cancelled!</string>
+        
+</resources>

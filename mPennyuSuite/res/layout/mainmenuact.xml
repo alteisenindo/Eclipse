@@ -1,0 +1,405 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+            
+    <TextView
+	       android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+					android:gravity="center"					        			        					       	        
+	        android:text="@string/app_name2"			
+	        android:textColor="@color/light_font3"		        
+	        android:textSize="24sp"
+	        android:textStyle="bold"	      
+	        android:layout_weight="0.1"  
+	        >
+		</TextView>
+		           	     
+    <ImageView        
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imgLogo"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/msa_intro" />    
+                
+    <LinearLayout     
+    android:id="@+id/panelMainMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"    
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:layout_weight="1"                 
+    >  
+    	<LinearLayout     
+    	android:id="@+id/panelStatus"	    
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"        
+	    android:orientation="vertical"	    	                     
+	    >	    	    
+	      
+	    <LinearLayout
+	        android:id="@+id/panelRow1"     	    
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"        
+	    android:orientation="horizontal"	    	                   	    
+	    >              
+	    
+	        <LinearLayout
+	            android:id="@+id/panelRow1Col1"	             	    
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"        
+			    android:orientation="vertical"
+			    android:layout_weight="1"	    	                   	    
+			    >
+	        
+	    <LinearLayout     		    
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"        
+		    android:orientation="horizontal"		                   
+		    > 				
+		    <View
+	        android:layout_width="0dp"
+	        android:layout_height="48dp"
+	        android:layout_weight="1"
+        />
+		    <Button
+			    android:id="@+id/btnPUMA"
+			    android:layout_width="48dp"
+			    android:layout_height="48dp"			    				    		  
+			    android:background="@drawable/puma_bbm"
+			     />		    
+		    <View
+	        android:layout_width="0dp"
+	        android:layout_height="48dp"
+	        android:layout_weight="1"
+        />
+		  </LinearLayout>
+		  
+       <LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content"								
+				android:orientation="vertical"
+				android:layout_marginTop="5dp" 
+				>	
+					<TextView
+				       android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+								android:gravity="center"					        			        					       				        
+				        android:text="PUMA"			
+				        android:textColor="@color/light_font3"		        
+				        android:textSize="20sp"
+				        android:layout_weight="1"
+				        >
+					</TextView>
+															
+					<TextView
+		        android:id="@+id/lblStatusPUMA"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"		        
+						android:gravity="center"					        			        					       	        
+		        android:text="@string/sAppConnected"			
+		        android:textColor="@color/GreenColor"		        
+		        android:textSize="18sp"
+		        android:layout_weight="1"		        	      	         
+		        >
+		        </TextView>		        													
+					    
+				</LinearLayout>
+				</LinearLayout>
+				
+	        <LinearLayout
+	            android:id="@+id/panelRow1Col2"	             	    
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"        
+			    android:orientation="vertical"
+			    android:layout_weight="1"	    	                   	    
+			    >
+				
+	    <LinearLayout     		    
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"        
+		    android:orientation="horizontal"		    		                   
+		    > 				
+		    <View
+	        android:layout_width="0dp"
+	        android:layout_height="48dp"
+	        android:layout_weight="1"
+        />
+		    <Button
+			    android:id="@+id/btnPennyuCall"
+			    android:layout_width="48dp"
+			    android:layout_height="48dp"			    				    		  
+			    android:background="@drawable/phone_bbm"
+			     />		    
+		    <View
+	        android:layout_width="0dp"
+	        android:layout_height="48dp"
+	        android:layout_weight="1"
+        />
+		  </LinearLayout>
+		  
+       <LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content"								
+				android:orientation="vertical"
+				android:layout_marginTop="5dp" 
+				>	
+					<TextView
+				       android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+								android:gravity="center"					        			        					       				        
+				        android:text="mPennyuCall"			
+				        android:textColor="@color/light_font3"		        
+				        android:textSize="20sp"
+				        android:layout_weight="1"
+				        >
+					</TextView>
+															
+					<TextView
+		        android:id="@+id/lblStatusCall"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="15dp"
+						android:gravity="center"					        			        					       	        
+		        android:text="@string/sAppConnected"			
+		        android:textColor="@color/GreenColor"		        
+		        android:textSize="18sp"
+		        android:layout_weight="1"		        	      	         
+		        >
+		        </TextView>		        													
+					    
+				</LinearLayout>
+				</LinearLayout>
+				
+       </LinearLayout>
+       
+	    <LinearLayout
+	        android:id="@+id/panelRow2"     	    
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"        
+	    android:orientation="horizontal">
+	        
+	        <LinearLayout
+	            android:id="@+id/panelRow2Col1"	             	    
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"        
+			    android:orientation="vertical"
+			    android:layout_weight="1"	    	                   	    
+			    >
+				
+       <LinearLayout     		    
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"        
+		    android:orientation="horizontal"		                     
+		    > 				
+		    <View
+	        android:layout_width="0dp"
+	        android:layout_height="48dp"
+	        android:layout_weight="1"
+        />
+		    <Button
+			    android:id="@+id/btnPennyuChat"
+			    android:layout_width="48dp"
+			    android:layout_height="48dp"			    			    		    		 
+			    android:background="@drawable/chat_bbm"
+			     />		    
+		    <View
+	        android:layout_width="0dp"
+	        android:layout_height="48dp"
+	        android:layout_weight="1"
+        />
+		  </LinearLayout>	           	       
+		
+    	<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content"								
+				android:orientation="vertical"
+				android:layout_marginTop="5dp" 
+				>	
+					<TextView
+				       android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+								android:gravity="center"					        			        					       				        
+				        android:text="mPennyuChat"			
+				        android:textColor="@color/light_font3"		        
+				        android:textSize="20sp"
+				        android:layout_weight="1"
+				        >
+					</TextView>
+															
+					<TextView
+		        android:id="@+id/lblStatusChat"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="15dp"
+						android:gravity="center"					        			        					       	        
+		        android:text="@string/sAppConnected"			
+		        android:textColor="@color/GreenColor"		        
+		        android:textSize="18sp"
+		        android:layout_weight="1"		        	      	         
+		        >
+		        </TextView>					
+					    
+				</LinearLayout>	 
+				</LinearLayout>
+				
+	        <LinearLayout
+	            android:id="@+id/panelRow2Col2"	             	    
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"        
+			    android:orientation="vertical"
+			    android:layout_weight="1"	    	                   	    
+			    >
+				
+    	<LinearLayout     		    
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"        
+		    android:orientation="horizontal"		                    
+		    > 				
+		    <View
+	        android:layout_width="0dp"
+	        android:layout_height="48dp"
+	        android:layout_weight="1"
+        />
+		    <Button
+			    android:id="@+id/btnPennyuMail"
+			    android:layout_width="48dp"
+			    android:layout_height="48dp"			    			    		    		 
+			    android:background="@drawable/email_bbm"
+			     />		    
+		    <View
+	        android:layout_width="0dp"
+	        android:layout_height="48dp"
+	        android:layout_weight="1"
+        />
+		  </LinearLayout>      
+		  
+    	<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content"								
+				android:orientation="vertical"
+				android:layout_marginTop="5dp" 
+				>	
+					<TextView
+				       android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+								android:gravity="center"					        			        					       				        
+				        android:text="mPennyuMail"			
+				        android:textColor="@color/light_font3"		        
+				        android:textSize="20sp"
+				        android:layout_weight="1"
+				        >
+					</TextView>				
+					
+					<TextView
+		        android:id="@+id/lblStatusMail"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="15dp"
+						android:gravity="center"					        			        					       	        
+		        android:text="@string/sAppConnected"			
+		        android:textColor="@color/GreenColor"		        
+		        android:textSize="18sp"
+		        android:layout_weight="1"		        	      	         
+		        >
+		        </TextView>																
+					    
+				</LinearLayout>
+				
+    	</LinearLayout>
+    	</LinearLayout>				          							
+			
+			<!--
+			<LinearLayout     		    
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"        
+		    android:orientation="horizontal"
+		    android:layout_marginTop="10dp"                 
+		    > 				
+		    <View
+	        android:layout_width="0dp"
+	        android:layout_height="32dp"
+	        android:layout_weight="1"
+        />
+		    <Button
+			    android:id="@+id/btnPennyuCall"
+			    android:layout_width="32dp"
+			    android:layout_height="32dp"			    				    		  
+			    android:background="@drawable/phone_bbm"
+			     />
+		    <Button
+			    android:id="@+id/btnPennyuChat"
+			    android:layout_width="32dp"
+			    android:layout_height="32dp"
+			    android:layout_marginLeft="15dp"			    		    		  
+			    android:background="@drawable/chat_bbm"
+			     />
+		    <Button
+			    android:id="@+id/btnPennyuMail"
+			    android:layout_width="32dp"
+			    android:layout_height="32dp"
+			    android:layout_marginLeft="15dp"			    				    		   
+			    android:background="@drawable/email_bbm"
+			     />
+		    <View
+	        android:layout_width="0dp"
+	        android:layout_height="32dp"
+	        android:layout_weight="1"
+        />
+		  </LinearLayout>
+		  -->
+			
+			</LinearLayout>	 
+			
+	    <LinearLayout     
+	    android:id="@+id/panelInfo"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"        
+	    android:orientation="vertical"	                     
+	    >			
+			
+	    <TextView
+	       android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+					android:gravity="center"					        			        					       	        
+	        android:text="@string/sNotActivated"			
+	        android:textColor="@color/RedColor"		        
+	        android:textSize="20sp"
+	        android:textStyle="bold"	      	         
+	        >
+			</TextView>
+			</LinearLayout>
+      
+      <LinearLayout     	    
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"	           
+	    android:layout_weight="0.1"	    	                    
+	    >
+	    </LinearLayout>
+			
+	    <LinearLayout     
+	    android:id="@+id/panelConnection"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"        
+	    android:orientation="vertical"	                    
+	    >							    			
+			<TextView
+	        android:id="@+id/lblStatusConnection"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+					android:gravity="center"					        			        					       	        
+	        android:text="@string/sConnecting"			
+	        android:textColor="@color/light_font2"		        
+	        android:textSize="15sp"
+	        android:textStyle="bold"	      	         
+	        >
+			</TextView>
+			</LinearLayout>				    
+          	          
+		</LinearLayout>
+		    		       
+</LinearLayout>

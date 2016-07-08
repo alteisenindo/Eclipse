@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="MainbarColor">#ff323232</color>
+    <color name="JobDetailColor">#ff151515</color>
+    <color name="MainMenuBGColor">#ff696969</color>
+    <color name="BlackColor">#ff000000</color>
+    <color name="WhiteColor">#ffffffff</color>
+    <color name="GrayColor">#ffe0dcdc</color>
+    <color name="OrangeColor">#ffF79811</color>
+    <color name="RedColor">#ffdd2222</color>
+    <color name="GreenColor">#ff22dd22</color>
+    <color name="YellowColor">#ffdddd00</color>
+    <color name="light_font">#FBFBFB</color>    
+    <color name="light_font2">#e0ff65</color>
+    <color name="light_font3">#FFd8d9d9</color>
+</resources>

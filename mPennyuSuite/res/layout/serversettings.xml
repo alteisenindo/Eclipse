@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >                
+    
+    <ScrollView 		  
+        android:id="@+id/panelSettings"  
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"		    
+		    android:fillViewport="true"		    
+		    android:orientation="vertical" >
+			
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="match_parent"					
+				android:orientation="vertical" >
+    
+    <LinearLayout         
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >        
+    
+	    <TextView        
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"        
+	        android:text="Settings"
+	        android:textSize="22sp"
+	        android:textColor="#FFEEEEEE"
+	        android:gravity="center" 
+	        />
+	            
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"	        
+	        android:orientation="horizontal" >
+	
+	    	<TextView        
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="20"	        
+	        android:text="Server" />      
+	    	<EditText
+	        android:id="@+id/tbServerHost"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="10"
+	        android:ems="10"                
+	        android:maxLength="32"        
+	        android:maxHeight="160dp" />
+		    
+	    </LinearLayout>
+	    
+	    <LinearLayout     
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:orientation="horizontal"    
+	    >	
+	    	<TextView        
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="20"
+	        android:text="IMAP Port"	        
+	        />      
+	    	<EditText
+	        android:id="@+id/tbIMAPPort"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="10"
+	        android:inputType="number"
+	        android:ems="10"                
+	        android:maxLength="6"        
+	        android:maxHeight="160dp" />
+		    
+	    </LinearLayout>
+	    
+	    <LinearLayout     
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:orientation="horizontal"    
+	    >	
+	    	<TextView        
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="20"
+	        android:text="SMTP Port" />      
+	    	<EditText
+	        android:id="@+id/tbSMTPPort"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="10"
+	        android:inputType="number"
+	        android:ems="10"                
+	        android:maxLength="6"        
+	        android:maxHeight="160dp" />
+		    
+	    </LinearLayout>
+	    
+	    <LinearLayout     
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:orientation="horizontal"    
+	    >	
+	    	<TextView        
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="20"
+	        android:text="Sender Email" />      
+	    	<EditText
+	        android:id="@+id/tbEmailAccount"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="10"
+	        android:ems="10"                
+	        android:maxLength="32"        
+	        android:maxHeight="160dp" />
+		    
+	    </LinearLayout>
+	    
+	    <LinearLayout     
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:orientation="horizontal"    
+	    >	
+	    	<TextView        
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="20"
+	        android:text="Sender Password" />      
+	    	<EditText
+	        android:id="@+id/tbEmailPassword"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="10"
+	        android:ems="10"
+	        android:inputType="textPassword"
+	        android:maxLength="32"        
+	        android:maxHeight="160dp" />
+		    
+	    </LinearLayout>
+	    
+	    <LinearLayout     
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:orientation="horizontal"    
+	    >	
+	    	<TextView        
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="20"
+	        android:text="Recipient Email" />      
+	    	<EditText
+	        android:id="@+id/tbRecipientEmail"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="10"
+	        android:ems="10"                
+	        android:maxLength="32"        
+	        android:maxHeight="160dp" />
+		    
+	    </LinearLayout>
+	    	    	    
+	    <Button
+			    android:id="@+id/btnSaveSettings"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="20dp"	        	        
+			    android:text="Save" />
+	    	        
+    </LinearLayout>        
+    			  
+		</LinearLayout>				
+							
+		</ScrollView>
+		
+    <LinearLayout     
+	    android:id="@+id/panelReset"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    
+	    <TextView        
+	        android:layout_width="fill_parent"
+	        android:layout_height="200dp"        
+	        android:text="Resetting Service..."
+	        android:textSize="22sp"
+	        android:textColor="#FFEEEEEE"
+	        android:gravity="center" 
+	        />
+	    
+	  </LinearLayout>
+    
+</LinearLayout>
